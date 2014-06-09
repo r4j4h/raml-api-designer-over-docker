@@ -23,6 +23,10 @@ make install
 cd /
 export PATH=$PATH:/root/node
 
+# Install Things Needed for RAML API Designer
+apt-get install -y links links2 lynx w3m # one of these is needed for the Grunt xdg-open task
+
+
 # Install RAML API Designer
 cd /usr/local
 git clone https://github.com/mulesoft/api-designer.git
@@ -35,7 +39,7 @@ npm install -g karma # Optional for running the test suite
 
 npm install
 
-bower install
+bower install --allow-root
 
 node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update
 echo "We here dude!"
