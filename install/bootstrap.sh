@@ -42,11 +42,11 @@ npm install
 bower install --allow-root
 
 node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update
-echo "We here dude!"
+
+echo "Run `grunt server` to start."
+
 #grunt server
-
 # grunt test
-
 # grunt
 
 
