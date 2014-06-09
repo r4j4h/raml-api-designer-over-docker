@@ -38,8 +38,8 @@ npm install
 bower install
 
 node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update
-
-grunt server
+echo "We here dude!"
+#grunt server
 
 # grunt test
 
