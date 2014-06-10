@@ -6,8 +6,8 @@ Setting up the Server
 
 After pulling down the repo:
 
-1. `docker build -t apidesigner .`
-2. `docker run -it -p 9013:9013 -p 35730:35730 apidesigner /bin/bash`
+1. `docker build -t apidesigner .` or `make build-image`
+2. `docker run -it -p 9013:9013 -p 35730:35730 apidesigner /bin/bash` or `make run-container`
 3. `cd /usr/local/api-designer`
 4. `bower install --allow-root`
 5. Type `n` to reporting usage stats for bower
