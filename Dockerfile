@@ -25,5 +25,7 @@ ADD install/bootstrap.sh /usr/bin/bootstrap.sh
 RUN bootstrap.sh
 
 
+WORKDIR /usr/local/api-designer
+
 EXPOSE 9013
 EXPOSE 35730
