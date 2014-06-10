@@ -23,6 +23,10 @@ cd /usr/local/api-designer; npm install;
 #cd /usr/local/api-designer; bower install --allow-root --config.interactive=false
 /usr/local/api-designer/node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update
 
+# Change from localhost to 127.0.0.1
+sed -i -e "s/localhost/0.0.0.0/" /usr/local/api-designer/Gruntfile.js
+sed -i -e "s/localhost/0.0.0.0/" /usr/local/api-designer/scenario/support/local.conf.js
+
 
 #grunt server
 # grunt test
